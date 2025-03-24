@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fredoka:wght@300..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Retrograde"; /* Give it a unique name */
+  src: url("/fonts/Retrograde.ttf") format("truetype"); /* Path to your font file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "super-shiny"; /* Give it a unique name */
+  src: url("/fonts/Super Shiny.ttf") format("truetype"); /* Path to your font file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "super-kinds"; /* Give it a unique name */
+  src: url("/fonts/Super Kinds.ttf") format("truetype"); /* Path to your font file */
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  /* --background: #ffffff; */
+  /* --foreground: #171717; */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --background: #0a0a0a; */
+    /* --foreground: #ededed; */
+  }
+}
+
+body {
+  /* color: var(--foreground); */
+  /* background: var(--background); */
+  font-family: "Fredoka", sans-serif;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.protest-guerrilla-regular {
+  font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* For Chrome, Safari, and Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield; /* Hides the spinners in Firefox */
+}
+
+/* Optional: To style the input field (optional) */
+input[type="number"] {
+  /* Add your styles here */
+}
+
+.company-header {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pdf-print .company-header img {
+  max-width: 200px; /* Adjust the logo size */
+}
+
+.pdf-print .company-header h1 {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.pdf-print .company-header p {
+  font-size: 12px;
+  margin: 2px 0;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.service-part::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
