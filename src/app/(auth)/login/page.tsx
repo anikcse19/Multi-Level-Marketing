@@ -84,6 +84,16 @@ const page = () => {
                 Enter to get unlimited access of data & information.
               </p>
             </div>
+            <div className="flex flex-col items-center">
+              <h1 className="text-base lg:text-xl font-bold">
+                Testing credentials!
+              </h1>
+              <p className="py-2 text-gray-500 text-sm">
+                username: <span className="font-bold">adminanik</span> <br />{" "}
+                password:
+                <span className="font-bold">anik123456</span>
+              </p>
+            </div>
             {/* login form  */}
             <form
               className="flex flex-col gap-y-3 pt-16"
